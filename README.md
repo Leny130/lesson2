@@ -7,12 +7,12 @@
 3.Посмотреть текущий уровень изоляции
 
 postgres=# show transaction isolation level;
-
+```
  transaction_isolation
 -----------------------
  read committed
 (1 row)
-
+```
 4.В первой сессии добавил новую запись
 
 5.Сделал запрос на выбор всех записей во второй сессии
