@@ -17,6 +17,17 @@ postgres=# show transaction isolation level;
 
 5.Сделал запрос на выбор всех записей во второй сессии
 
+```
+postgres=*# SELECT * FROM persons;
+ id | first_name | second_name
+----+------------+-------------
+  1 | van        | sidorov
+  2 | matrena    | fedorova
+  3 | van        | sidorov
+  4 | matrena    | fedorova
+(4 rows)
+```
+
 6.Вижу новую запись, потому что
 
 7.Завершил транзакцию в первом окне
